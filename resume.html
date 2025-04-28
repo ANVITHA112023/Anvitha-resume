@@ -14,7 +14,7 @@
       margin: 40px auto;
       max-width: 800px;
       padding: 0 20px;
-    
+      text-align: justify;
     }
   
     h1 {
@@ -101,8 +101,12 @@ ul {
 }
 
 ul li {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   text-align: justify;
+  font-size: 15px;
+    color: #090808;
+    line-height: 1.6;
+    margin: 5px 0;
 }
 .cert-header {
   display: flex;
@@ -148,7 +152,7 @@ ul li {
 
   p {
     font-size: 15px;
-    color: #555;
+    color: #090808;
     line-height: 1.6;
     margin: 5px 0;
   }
@@ -173,6 +177,30 @@ ul li {
     border-left: 4px solid #3498db;
     border-radius: 6px;
   }
+  .language-section {
+      margin-top: 10px;
+    }
+
+    .language-entry {
+      margin-bottom: 10px;}
+
+    .language {
+      font-weight: bold;
+      display: inline-block;
+      width: 100px;
+    }
+
+    .stars {
+      color: #3498db;
+      
+      letter-spacing: 0.8px;
+      margin-right: 8px;
+    }
+
+    .level {
+      font-size: 0.9em;
+      color: #090808;
+    }
 </style>
 
 
@@ -218,15 +246,18 @@ ul li {
 <div class="work-entry">
   <div class="work-header">
     <div class="work-company"><strong>Ardent Computech Pvt. Ltd</strong></div>
-    <div class="work-date">(Feb 2025 – Apr 2025)</div>
+    <div class="work-date">02/2025 – 04/2025</div>
   </div>
   <p><strong>Cloud Computing in AWS - Intern</strong></p>
   <p>
-    Completed a project-based internship focused on AWS infrastructure and architecture.  
-    Designed and deployed mock cloud solutions using key AWS services such as <strong>EC2</strong> for compute,  <strong>EBS</strong> for persistent block storage,<strong>S3</strong> for object storage, <strong>DynamoDB</strong> for serverless NoSQL databases, and <strong>CloudWatch</strong> for monitoring and logging.  
-    Gained practical knowledge of building cost-effective, scalable, and secure architectures aligned with AWS Well-Architected Framework.  
-    Simulated real-world business use cases to understand load balancing, failover strategies, and service integrations across AWS.
-  </p>
+    <ul>
+      <p>
+  <li> Designed and deployed mock cloud environments using core AWS services including <strong>EC2 (Elastic Compute Cloud), EBS (Elastic Block Store), S3 (Simple Storage Service),DynamoDB</strong> and <strong>CloudWatch</strong>.</li>
+    <li>Implemented solutions focusing on <strong>compute, storage, serverless databases,</strong> and <strong>monitoring</strong> to simulate real-world business scenarios.</li>
+    <li>Applied AWS best practices to create <strong>cost-effective, scalable,</strong> and <strong>secure</strong>  cloud architectures aligned with the<strong> AWS Well-Architected Framework</strong> </li>
+    <li>Gained hands-on experience in<strong> load balancing, failover strategies,</strong>  and <strong>multi-service integrations</strong> across the AWS ecosystem.</li>
+    <li>Demonstrated strong understanding of <strong>cloud infrastructure, DevOps concepts,</strong> and <strong>cloud-native solution design.</strong></li>
+    </ul>
 </div>
 
 
@@ -237,21 +268,21 @@ ul li {
 <div class="edu-entry">
   <div class="edu-header">
     <div class="edu-institute"><strong>Jawaharlal Nehru New College of Engineering</strong></div>
-    <div class="work-date">(2022 – 2026)</div>
+    <div class="work-date">01/2022 – 05/2026</div>
   </div>
-  <p>B.E (Computer Science & Engineering) – CGPA: 9.4</p>
+  <p>B.E (Computer Science & Engineering) – CGPA: 9.4 /10</p>
 </div>
 <div class="edu-entry">
   <div class="edu-header">
     <div class="edu-institute"><strong>Kasturaba Girls Pu College</strong></div>
-    <div class="work-date">(2020 – 2022)</div>
+    <div class="work-date">05/2020 – 04/2022</div>
   </div>
   <p>PUC - 98 %</p>
 </div>
 <div class="edu-entry">
   <div class="edu-header">
     <div class="edu-institute"><strong>Kasturaba Girls High College</strong></div>
-    <div class="work-date">(2017 – 2020)</div>
+    <div class="work-date">05/2017 – 04/2020</div>
   </div>
   <p>SSLC - 98.02 %</p>
 </div>
@@ -295,7 +326,24 @@ ul li {
 
 
 <h2>Projects</h2>
-
+<div class="cert-entry">
+  <div class="cert-header">
+    <div>
+      <strong>Automated Receipt and invoice processing with AWS</strong>
+      – <a href="https://github.com/ANVITHA112023/Automated-receipt-and-invoice-processing-sysytem.git" target="_blank">Source Code</a>
+    </div>
+    <div class="cert-date">2025-2025</div>
+  </div>
+  <p>
+    <ul>
+      <li>Built a scalable and cost-effective pipeline for real-time document processing.</li>
+      <li>Integrated Textract for intelligent OCR and data extraction with 95%+ accuracy.</li>
+      <li>Designed workflows using Step Functions and triggered Lambda functions for automatic validation and storage.</li>
+      <li>Stored structured metadata in DynamoDB and original documents in S3 for easy retrieval and reporting.</li>
+      <li><strong>Technologies:</strong> AWS Textract, Lambda, S3, DynamoDB, Step Functions, API Gateway, Python, Boto3</li>
+    </ul>
+  </p>
+</div>
 <div class="cert-entry">
   <div class="cert-header">
     <div>
@@ -320,7 +368,7 @@ ul li {
   </div>
   <p>
     Developed a full-stack hospital management system with modules for patient records, doctor schedules, and pharmacy stock. Technologies used include
-    <strong>MySQL</strong>, <strong>PHP</strong>/<strong>Node.js</strong>, <strong>HTML</strong>, <strong>CSS</strong>, and <strong>Bootstrap</strong>. Implemented secure user authentication and admin dashboards.
+    <strong>MySQL</strong>, <strong>PHP</strong>, <strong>HTML</strong>, <strong>CSS</strong>, and <strong>Bootstrap</strong>. Implemented secure user authentication and admin dashboards.
   </p>
 </div>
 
@@ -328,19 +376,36 @@ ul li {
 
   <h2>Skills</h2>
   <ul>
-    <li>Languages : C,Java,Python</li>
-    <li>Web development: HTML,CSS,JavaScript</li>
-    <li>Frameworks: React.js ,Node.js,Express.js</li>  
-    <li>Database :MongoDB,SQL,PostgreSQL,PHP</li>
-    <li>Tools/ Platforms : Git,VS Code,AWS(EC2,S3,EBS)</li>
+    <li>Languages  : C,Java,Python</li>
+    <li>Web development  : HTML,CSS,JavaScript</li>
+    <li>Frameworks  : React.js ,Node.js,Express.js</li>  
+    <li>Database : MongoDB,SQL,PostgreSQL,PHP</li>
+    <li>Tools/ Platforms : Git,VS Code,AWS Services</li>
     
  </ul>
   
+ 
 
-  <h2>Extra Curricular Activities</h2>
-  <p>
-    A passionate tech enthusiast actively involved in organizing and leading technical development workshops as a representative member of <strong>TechZone</strong>. Frequently participates in cutting-edge tech events, showcasing strong leadership, teamwork, and a commitment to continuous learning in the ever-evolving world of technology.
-  </p>
-  
+ <h2>Languages</h2>
+ <div class="language-section">
+   <div class="language-entry">
+     <span class="language">English</span>
+     <span class="stars">★★★★★</span>
+     <span class="level">(Full Professional Proficiency)</span>
+   </div>
+   <div class="language-entry">
+     <span class="language">Kannada</span>
+     <span class="stars">★★★★★</span>
+     <span class="level">(Native / Bilingual Proficiency)</span>
+   </div>
+   <div class="language-entry">
+     <span class="language">Hindi</span>
+     <span class="stars">★★★★☆</span>
+     <span class="level">(Professional Working Proficiency)</span>
+   </div>
+ </div>
+ 
 </body>
 </html>
+
+
